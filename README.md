@@ -70,8 +70,13 @@ flask run
 3. Enter legal queries to receive AI-generated insights.
 
 ## Disclaimer
-⚠️ Legal AI is for informational purposes only and does not provide legally binding advice. Always consult a licensed legal professional for specific legal concerns.
+⚠️  Legal AI is for informational purposes only and does not provide legally binding advice. While it aims to assist with understanding laws and regulations, it is not a substitute for professional legal consultation. For specific legal concerns, always consult a licensed legal professional.
 
-## License
+## License  
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the **MIT License**.  
+
+### Why MIT?  
+I chose the MIT License because it is a widely used, permissive open-source license. It allows anyone to use, modify, and distribute the software with minimal restrictions, while still requiring attribution to the original authors. This ensures flexibility while encouraging contributions and innovation in the legal tech space.
+  
+See the [LICENSE](LICENSE) file for full details.
