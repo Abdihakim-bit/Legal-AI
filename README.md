@@ -1,5 +1,7 @@
 # Legal AI
 
+![Legal AI Chatbot](Assets/Legal AI Chatbot.png)
+
 ## Description
 
 This project is an AI-powered legal chatbot designed to help people in Ontario, Canada interpret laws and access legal information. It provides general legal insights based on available references but does not replace professional legal advice.
