@@ -54,7 +54,21 @@ cd Frontend/legal-ai-frontend
 npm install
 npm run dev
 ```
-3️⃣ Setup and Run the Backend
+3️⃣ Set Up and Run Ollama Mistral Model Locally
+
+You need to install and set up the Ollama Mistral model on your local machine. Follow these steps:
+
+- Download and install Ollama from [Ollama's official website](https://ollama.com/download)
+- Pull the Mistral Model
+```bash
+ollama pull mistral
+```
+- Run the Mistral Model API locally
+```bash
+ollama serve
+```
+
+4️⃣ Install Python Dependencies for Flask and Run it
 ```bash
 cd Backend
 pip install -r requirements.txt
