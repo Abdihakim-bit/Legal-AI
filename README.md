@@ -56,7 +56,7 @@ npm run dev
 ```
 3️⃣ Set Up and Run Ollama Mistral Model Locally
 
-You need to install and set up the Ollama Mistral model on your local machine. Follow these steps:
+Follow these steps to install and set up the Ollama Mistral model on your local machine:
 
 - Download and install Ollama from [Ollama's official website](https://ollama.com/download)
 - Pull the Mistral Model
