@@ -1,6 +1,6 @@
 # Legal AI
 
-![Legal AI Chatbot]([Assets/Legal AI Chatbot.png](https://raw.githubusercontent.com/Abdihakim-bit/Legal-AI/refs/heads/main/Assets/Legal%20AI%20Chatbot.png))
+![Legal AI Chatbot](https://raw.githubusercontent.com/Abdihakim-bit/Legal-AI/refs/heads/main/Assets/Legal%20AI%20Chatbot.png)
 
 ## Description
 
