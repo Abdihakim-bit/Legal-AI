@@ -1,7 +1,5 @@
 # Legal AI
 
-![Legal AI Chatbot](https://raw.githubusercontent.com/Abdihakim-bit/Legal-AI/refs/heads/main/Assets/Legal%20AI%20Chatbot.png)
-
 ## Description
 
 This project is an AI-powered legal chatbot designed to help people in Ontario, Canada interpret laws and access legal information. It provides general legal insights based on available references but does not replace professional legal advice.
@@ -70,6 +68,10 @@ flask run
 2. Access the web application via http://localhost:5173.
 
 3. Enter legal queries to receive AI-generated insights.
+
+### Example
+
+![Legal AI Chatbot](https://raw.githubusercontent.com/Abdihakim-bit/Legal-AI/refs/heads/main/Assets/Legal%20AI%20Chatbot.png)
 
 ## Disclaimer
 ⚠️  Legal AI is for informational purposes only and does not provide legally binding advice. While it aims to assist with understanding laws and regulations, it is not a substitute for professional legal consultation. For specific legal concerns, always consult a licensed legal professional.
