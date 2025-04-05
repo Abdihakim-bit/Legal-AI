@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
+import useMessageStore from "../store/userSessionStore";
 import "../styles.css";
 
 const LandingPage = () => {
   const [query, setQuery] = useState("");
-  const [chatHistory, setChatHistory] = useState([]);
+  const {messages, addMessage} = useMessageStore();
   const [resources, setResources] = useState([]);
   const [loading, setLoading] = useState(false);
 
   const fetchResponse = async (message) => {
     setLoading(true);
+    addMessage({sender: "user", text: message, timestamp: new Date().toISOString() });
     try {
       const response = await fetch("http://localhost:5000/api/generate", {
         method: "POST",
@@ -32,12 +34,8 @@ const LandingPage = () => {
             .filter(Boolean)
         : [];
 
-      // Update state
-      setChatHistory((prev) => [
-        ...prev,
-        { role: "User", message },
-        { role: "Agent", message: content },
-      ]);
+      // Update resources
+      addMessage({sender: "ai", text: content, timestamp: new Date().toISOString() });
       setResources(extractedResources);
     } catch (error) {
       console.error("Error:", error);
@@ -84,12 +82,12 @@ const LandingPage = () => {
         {/* Right Section - Input and Chat */}
         <section className="query-section">
           <div id="chat">
-            {chatHistory.length === 0 ? (
+            {messages.length === 0 ? (
               <h2 id="welcome-text">Welcome! How can I help you today?</h2>
             ) : (
-              chatHistory.map((msg, index) => (
-                <p key={index} className={msg.role === "User" ? "query" : "agent-response"}>
-                  {msg.message}
+              messages.map((msg, index) => (
+                <p key={index} className={msg.sender === "user" ? "query" : "agent-response"}>
+                  {msg.text}
                 </p>
               ))
             )}
